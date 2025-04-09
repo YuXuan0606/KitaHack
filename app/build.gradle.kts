@@ -1,7 +1,6 @@
 plugins {
-    alias(libs.plugins.android.application)
+    id("com.android.application") // No version needed here
 }
-
 android {
     namespace = "com.example.kitahack"
     compileSdk = 35

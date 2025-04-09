@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +16,51 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KitaHack"
         tools:targetApi="31">
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DonateChoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DonationHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DropOffLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditVolunteerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodDonationOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MoneyDonationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyVolunteerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PickUpRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReceiptsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VolunteerApplicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VoucherActivity"
+            android:exported="false" />
         <activity
             android:name=".WelcomeActivity"
             android:exported="false" />
@@ -35,8 +84,13 @@
         </activity>
 
         <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCF5xsEMoEeMY-7wZ0kfbezjqZtlSGPHtE" />
+
+        <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>
