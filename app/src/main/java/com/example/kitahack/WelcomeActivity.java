@@ -2,6 +2,8 @@ package com.example.kitahack;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -12,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class WelcomeActivity extends AppCompatActivity {
     private TextView welcomeTextView;
-
+    private Button volunteerButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,5 +34,6 @@ public class WelcomeActivity extends AppCompatActivity {
 
         // Display the welcome message with the user's name
         welcomeTextView.setText("Welcome, \n" + userName + "!");
+
     }
 }
