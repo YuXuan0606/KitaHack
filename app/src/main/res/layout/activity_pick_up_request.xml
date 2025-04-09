@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Pick-Up Request"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Name" />
+
+        <EditText
+            android:id="@+id/inputAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pick-Up Address"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/inputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/inputFoodDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Food Details (e.g. 5 rice packs, expiry, etc.)"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/inputFoodItemCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number of food items"
+            android:inputType="number" />
+
+
+        <Button
+            android:id="@+id/btnSubmitPickUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Pick-Up Request"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#64B5F6"
+            android:textColor="#000" />
+    </LinearLayout>
+</ScrollView>

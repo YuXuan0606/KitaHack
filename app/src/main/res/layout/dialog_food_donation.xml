@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Donation Type (Pick-Up or Drop-Off) -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioPickUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick-Up" />
+
+        <RadioButton
+            android:id="@+id/radioDropOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drop-Off" />
+    </RadioGroup>
+
+    <!-- Address & Contact Info (for Pick-Up only) -->
+    <android.widget.EditText
+        android:id="@+id/addressField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter address"
+        android:visibility="gone"/>
+
+    <android.widget.EditText
+        android:id="@+id/contactField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter contact info"
+        android:visibility="gone"/>
+
+</LinearLayout>
