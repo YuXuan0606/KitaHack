@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#F1F8E9">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Food Donation Option"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnDropOff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drop-Off at Designated Location"
+        android:backgroundTint="#A5D6A7"
+        android:textColor="#000"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnPickUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request a Pick-Up"
+        android:backgroundTint="#81D4FA"
+        android:textColor="#000"/>
+
+</LinearLayout>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">KitaHack</string>
+    <string-array name="volunteer_roles">
+        <item>Event Organizer</item>
+        <item>Food Distributor</item>
+        <item>Logistics Coordinator</item>
+        <item>Admin Support</item>
+    </string-array>
 </resources>
